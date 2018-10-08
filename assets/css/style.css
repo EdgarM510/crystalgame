@@ -1,0 +1,46 @@
+body {
+    background-color: #fff;
+}
+
+h1{
+    font-size: 60px;
+}
+
+ul{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.box {
+    border: 4px solid #aaa;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+}
+
+#cr1 {
+    background-image: url("../images/garnet.jpg");
+    background-size: 200px;
+}
+
+#cr2 {
+    background-image: url("../images/pearl.jpg");
+    background-size: 200px;
+}
+
+#cr3 {
+    background-image: url("../images/amethyst.jpg");
+    background-size: 200px;
+}
+
+#cr4 {
+    background-image: url("../images/rosequartz.jpg");
+    background-size: 200px;
+        }
