@@ -3,10 +3,6 @@ var game = {
     losses: 0,
     target: 0,
     total: 0,
-    c1: 0,
-    c2: 0,
-    c3: 0,
-    c4: 0
 };
 
 game.printScore = function(){
@@ -33,17 +29,20 @@ game.nextRound = function (){
 game.winCheck = function (){
     if (game.total == this.target){
         this.wins++;
-        game.nextRound();
+        return true
     }
     else if (game.total > this.target){
         this.losses++;
-        game.nextRound();
+        return true
     }
+    return false
 };
 
 $(".btn").on("click", function (){
     game.total = parseInt(game.total) + parseInt($(this).val());
-    game.winCheck();
+    if(game.winCheck()) {
+        game.nextRound();
+    }
     game.printScore();
 });
 
